@@ -1,0 +1,41 @@
+{
+  "name": "npm-description",
+  "version": "1.0.0",
+  "description": "Fetch a package's description from NPM",
+  "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://connorwhite.org/github/npm-description",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/npm-description.git"
+  },
+  "keywords": [
+    "npm",
+    "get",
+    "description",
+    "package",
+    "fetch",
+    "api"
+  ],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "bob build",
+    "postversion": "git push",
+    "prepublishOnly": "yarn run build && yarn run test",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.5"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.0.1",
+    "jest": "^26.4.2"
+  }
+}
