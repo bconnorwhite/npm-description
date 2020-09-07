@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "cross-fetch": "^3.0.5"
+    "cross-fetch-json": "^1.1.0"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.0.1",

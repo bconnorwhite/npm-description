@@ -2053,6 +2053,14 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+cross-fetch-json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cross-fetch-json/-/cross-fetch-json-1.1.0.tgz#6ce130da724fa123962bb9dacea32330a07a4208"
+  integrity sha512-3FLL8kX4nXgXqBLph4inr6Y3DfQmL4Bl1F/ECzm1srr1IVz81afORl2lyXepStrMqynxeqGr/8dRDfoSsxFfww==
+  dependencies:
+    cross-fetch "^3.0.5"
+    parse-json-object "^1.1.0"
+
 cross-fetch@^3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.5.tgz#2739d2981892e7ab488a7ad03b92df2816e03f4c"
@@ -4189,6 +4197,13 @@ parse-json-object@^1.0.0, parse-json-object@^1.0.5:
   dependencies:
     "@bconnorwhite/json-types" "^1.0.5"
 
+parse-json-object@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.1.0.tgz#eef60211cec368259723d8586ecec7252f8fcdb2"
+  integrity sha512-4w5s6uJY1tW9REY8UwUOyaZKSKsrbQrMEzlV/Le/g5t4iMWuuyK83pZZ0OZimSOL9iyv2ORvRSgz71Ekd7iD3g==
+  dependencies:
+    types-json "^1.0.6"
+
 parse-json@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-5.1.0.tgz#f96088cdf24a8faa9aea9a009f2d9d942c999646"
@@ -5193,6 +5208,11 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+types-json@^1.0.6:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/types-json/-/types-json-1.0.7.tgz#d7e929c3dc88c6362c445526338ad1c3e641cb39"
+  integrity sha512-BzDzAIjrSrViEYQtCCjOemr5yggoUQE0oJGiVkMUE3yy5FNSZmWZqlB2DDLSm3VeE0hsj8snXVIHJmWKX0PtUQ==
 
 typescript@^4.0.2:
   version "4.0.2"

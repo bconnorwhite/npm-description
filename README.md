@@ -18,7 +18,7 @@
 
 > Fetch a package's description from NPM.
 
-Uses [cross-fetch](https://npmjs.com/package/cross-fetch) to support usage in both brower and node.
+Uses [cross-fetch-json](https://npmjs.com/package/cross-fetch-json) to support usage in both brower and node.
 
 ## Installation
 
@@ -52,12 +52,12 @@ getDescriptions(["chalk", "commander"]).then((result) => {
 ```ts
 import { getDescription, getDescriptions, Descriptions } from "npm-description";
 
-function getDescription(name: string): Promise<string>;
+function getDescription(name: string): Promise<string | undefined>;
 
 function getDescriptions(names: string[]): Promise<Descriptions>;
 
 export type Descriptions = {
-  [name: string]: string;
+  [name: string]: string | undefined;
 };
 ```
 
@@ -65,7 +65,7 @@ export type Descriptions = {
 
 <h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/npm-description.svg"></h2>
 
-- [cross-fetch](https://npmjs.com/package/cross-fetch): Universal WHATWG Fetch API for Node, Browsers and React Native
+- [cross-fetch-json](https://npmjs.com/package/cross-fetch-json): Universal fetch API that only returns JSON
 
 ##
 

@@ -1,19 +1,23 @@
-import fetch from "cross-fetch";
+import fetch from "cross-fetch-json";
+
+type Result = {
+  description: string;
+}
 
 async function request(name: string) {
-  return fetch(`https://registry.npmjs.org/${name}`).then((res) => res.json());
+  return fetch<Result>(`https://registry.npmjs.org/${name}`);
 }
 
 export async function getDescription(name: string) {
-  return request(name).then(({ description }: { description: string }) => description);
+  return request(name).then((result) => result?.description);
 }
 
 export type Descriptions = {
-  [name: string]: string;
+  [name: string]: string | undefined;
 }
 
 export async function getDescriptions(names: string[]) {
-  const promises: Promise<string>[] = [];
+  const promises: Promise<string | undefined>[] = [];
   names.forEach((name) => {
     promises.push(getDescription(name));
   });
